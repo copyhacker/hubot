@@ -1,6 +1,10 @@
 Robot = require '../robot'
 
 class Shell extends Robot
+  broadcast: (strings...) ->
+    for str in strings
+      console.log "Broadcasting: #{str}"
+
   send: (user, strings...) ->
     for str in strings
       console.log str
