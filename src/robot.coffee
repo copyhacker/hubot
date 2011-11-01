@@ -130,6 +130,11 @@ class Robot
 
   # Public: Raw method for sending data back to the chat source.  Extend this.
   #
+  # strings - One or more Strings for each message to send.
+  broadcast: (strings...) ->
+
+  # Public: Raw method for sending data back to the chat source.  Extend this.
+  #
   # user    - A Robot.User instance.
   # strings - One or more Strings for each message to send.
   send: (user, strings...) ->
